@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchFragment"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableEnd="@drawable/ic_search"
+            android:background="@drawable/edittext_back"
+            android:drawableTint="@color/default_hint_color"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:elevation="3dp"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/default_hint_color"
+            android:textColor="@color/black"
+            android:hint="@string/searchFragment_editTextHint"
+            android:textSize="14sp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/historyTip"
+            android:text="@string/profileFragment_history_tip"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

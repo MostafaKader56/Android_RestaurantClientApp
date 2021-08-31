@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "3298050158",
+    "project_id": "resturant-project-cdd0a",
+    "storage_bucket": "resturant-project-cdd0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3298050158:android:2b200e8de4e0184555e67f",
+        "android_client_info": {
+          "package_name": "com.technoship.resturant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3298050158-4t1jikidmj3l4k3tfgr0u41aoglmcal8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technoship.resturant",
+            "certificate_hash": "25ce016f26559e315f8d66d7dfc285d1af0808bc"
+          }
+        },
+        {
+          "client_id": "3298050158-cgtauono8u2m62j9fbl8humpflb1labb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6rMLxemPOcP-T0_rypwlo4Z7Tbob5vBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3298050158-cgtauono8u2m62j9fbl8humpflb1labb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

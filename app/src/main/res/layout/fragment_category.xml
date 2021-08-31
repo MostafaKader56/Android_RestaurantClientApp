@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CategoryFragment"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+            android:id="@+id/categoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:gravity="center"
+            android:text="@string/categoryFragment_categories"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_alignTop="@+id/categoryTitle"
+            android:layout_alignBottom="@+id/categoryTitle"
+            android:contentDescription="@string/contentDescription"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_recycler"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/categoryTitle"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/currentCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@+id/category_recycler"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/items_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentCategoryTitle"
+            android:layout_marginVertical="10dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/categoryFragment_emptyLottie"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/currentCategoryTitle"
+            app:lottie_rawRes="@raw/tumbleweed_rolling"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
