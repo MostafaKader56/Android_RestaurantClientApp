@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:text="@string/homeFragment_dishes"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/homeTitle"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/categoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:text="@string/homeFragment_food_categories"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/view_pager"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_recycler"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/categoryTitle"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/currentCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:text="@string/homeFragment_popular_items"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@+id/category_recycler"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popular_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentCategoryTitle"
+            android:layout_marginVertical="10dp"/>
+
+    </RelativeLayout>
+    
+</androidx.core.widget.NestedScrollView>
